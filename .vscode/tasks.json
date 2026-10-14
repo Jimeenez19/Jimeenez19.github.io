@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Temporary Git status check",
+			"type": "shell",
+			"command": "C:\\Users\\SMR2-PC16\\AppData\\Local\\GitHubDesktop\\app-3.6.6\\resources\\app\\git\\cmd\\git.exe",
+			"args": [
+				"-C",
+				"C:\\Users\\SMR2-PC16\\Documents\\GitHub\\Jimeenez19.github.io",
+				"status",
+				"--short",
+				"--branch"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
