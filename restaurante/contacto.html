@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Contacto | Restaurante Anto&ntilde;ito</title>
+</head>
+<body>
+
+<header>
+    <h1>Envíenos su mensaje</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio del restaurante</a> |
+    <a href="../index.html">Men&uacute; principal</a>
+</nav>
+
+<main>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="correo">Correo electr&oacute;nico:</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="telefono">Tel&eacute;fono:</label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+            </p>
+            <p>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </p>
+            <p>
+                <label for="mensaje">Su mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="8" cols="60" maxlength="500" required></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </p>
+    </form>
+</main>
+
+<footer>
+    <p><a href="index.html">Volver al restaurante</a></p>
+</footer>
+
+</body>
+</html>
