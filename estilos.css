@@ -70,6 +70,15 @@ table {
     margin-right: auto;
 }
 
+.portada-imagen {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 24px auto 0;
+    border-radius: 8px;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
