@@ -36,6 +36,10 @@ nav a:hover {
 
 section {
     padding: 50px 20px;
+}
+
+body.portada section,
+body.horario-clase section {
     text-align: center;
 }
 
