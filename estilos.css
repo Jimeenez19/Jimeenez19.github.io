@@ -40,7 +40,7 @@ section {
 
 body.portada section,
 body.horario-clase section,
-body:has(main table tfoot td[colspan="4"]) main > section {
+body.horario-restaurante main > section {
     text-align: center;
 }
 
@@ -61,29 +61,29 @@ footer {
     padding: 10px 0;
 }
 .sor,
-body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(1) {
+body.horario-restaurante tbody td:nth-of-type(1) {
     background-color: #b7d7c2;
 }
 
 .aw,
-body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(2) {
+body.horario-restaurante tbody td:nth-of-type(2) {
     background-color: #f2c6a0;
 }
 
 .sr,
-body:has(main table tfoot td[colspan="4"]) tbody th {
+body.horario-restaurante tbody th {
     background-color: #c5c9e6;
 }
 
 .ingles { background-color: #f2df9b; }
 
 .si,
-body:has(main table tfoot td[colspan="4"]) thead {
+body.horario-restaurante thead {
     background-color: #b7dce0;
 }
 
 .pi,
-body:has(main table tfoot td[colspan="4"]) tfoot {
+body.horario-restaurante tfoot {
     background-color: #d8c2df;
 }
 
@@ -91,7 +91,7 @@ body:has(main table tfoot td[colspan="4"]) tfoot {
 .opt { background-color: #c6d9a8; }
 
 .recreo,
-body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(3) {
+body.horario-restaurante tbody td:nth-of-type(3) {
     background-color: #e8b8a8;
 }
 
@@ -197,7 +197,7 @@ main > ul {
 }
 
 body:has(form) footer,
-body:has(main table tfoot td[colspan="4"]) footer {
+body.horario-restaurante footer {
     position: static;
     padding: 10px 20px;
     text-align: center;
@@ -217,7 +217,7 @@ body:has(main table tfoot td[colspan="4"]) footer {
     }
 }
 
-body:has(main table tfoot td[colspan="4"]) aside {
+body.horario-restaurante aside {
     position: static;
     margin: 24px auto;
     text-align: center;
