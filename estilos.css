@@ -69,3 +69,99 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 20px;
+}
+
+form {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #dcefff;
+    border: 1px solid #91c7ed;
+    border-radius: 8px;
+}
+
+form fieldset {
+    margin: 0 0 20px;
+    padding: 16px;
+    border: 1px solid #91c7ed;
+    border-radius: 6px;
+}
+
+form legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+form p {
+    margin: 12px 0;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #8a9eae;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #0876d1;
+    outline-offset: 1px;
+}
+
+form button {
+    margin: 4px 8px 4px 0;
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0876d1;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00559b;
+}
+
+form + p,
+main > p {
+    text-align: center;
+}
+
+main > ul {
+    padding: 20px 40px;
+    background-color: #dcefff;
+    border: 1px solid #91c7ed;
+    border-radius: 8px;
+}
+
+body:has(form) footer {
+    position: static;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    form fieldset {
+        padding: 12px;
+    }
+}
