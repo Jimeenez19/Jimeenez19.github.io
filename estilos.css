@@ -39,7 +39,8 @@ section {
 }
 
 body.portada section,
-body.horario-clase section {
+body.horario-clase section,
+body:has(main table tfoot td[colspan="4"]) main > section {
     text-align: center;
 }
 
@@ -59,19 +60,43 @@ footer {
     left: 10px;
     padding: 10px 0;
 }
-.sor { background-color: #b7d7c2; }
-.aw { background-color: #f2c6a0; }
-.sr { background-color: #c5c9e6; }
+.sor,
+body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(1) {
+    background-color: #b7d7c2;
+}
+
+.aw,
+body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(2) {
+    background-color: #f2c6a0;
+}
+
+.sr,
+body:has(main table tfoot td[colspan="4"]) tbody th {
+    background-color: #c5c9e6;
+}
+
 .ingles { background-color: #f2df9b; }
-.si { background-color: #b7dce0; }
-.pi { background-color: #d8c2df; }
+
+.si,
+body:has(main table tfoot td[colspan="4"]) thead {
+    background-color: #b7dce0;
+}
+
+.pi,
+body:has(main table tfoot td[colspan="4"]) tfoot {
+    background-color: #d8c2df;
+}
+
 .ipe { background-color: #f0c4c4; }
 .opt { background-color: #c6d9a8; }
-.recreo { background-color: #e8b8a8; }
+
+.recreo,
+body:has(main table tfoot td[colspan="4"]) tbody td:nth-of-type(3) {
+    background-color: #e8b8a8;
+}
 
 table {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -90,7 +115,6 @@ img {
     display: block;
     width: 100%;
     max-width: 480px;
-    height: auto;
     margin: 24px auto 0;
     border-radius: 8px;
 }
@@ -101,14 +125,18 @@ main {
     padding: 28px 20px;
 }
 
+form,
+main > ul {
+    background-color: #dcefff;
+    border: 1px solid #91c7ed;
+    border-radius: 8px;
+}
+
 form {
     box-sizing: border-box;
     max-width: 900px;
     margin: 0 auto;
     padding: 24px;
-    background-color: #dcefff;
-    border: 1px solid #91c7ed;
-    border-radius: 8px;
 }
 
 form fieldset {
@@ -166,12 +194,10 @@ main > p {
 
 main > ul {
     padding: 20px 40px;
-    background-color: #dcefff;
-    border: 1px solid #91c7ed;
-    border-radius: 8px;
 }
 
-body:has(form) footer {
+body:has(form) footer,
+body:has(main table tfoot td[colspan="4"]) footer {
     position: static;
     padding: 10px 20px;
     text-align: center;
@@ -189,4 +215,10 @@ body:has(form) footer {
     form fieldset {
         padding: 12px;
     }
+}
+
+body:has(main table tfoot td[colspan="4"]) aside {
+    position: static;
+    margin: 24px auto;
+    text-align: center;
 }
