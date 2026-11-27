@@ -1,224 +1,186 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    position: relative;
+    margin: 0; /* Quita el margen que el navegador aÃ±ade por defecto. */
+    font-family: Arial, sans-serif; /* Usa Arial y una fuente genÃ©rica de respaldo. */
+    min-height: 100vh; /* Hace que el cuerpo ocupe como mÃ­nimo toda la altura visible. */
+    position: relative; /* Sirve de referencia para los elementos posicionados dentro del cuerpo. */
 }
-
 header {
-    background-color: #0876d1;
-    color: #222;
-    text-align: center;
-    padding: 14px;
+    background-color: #0876d1; /* Pinta el fondo del encabezado de azul. */
+    color: #222; /* Define el color oscuro del texto del encabezado. */
+    text-align: center; /* Centra el contenido del encabezado. */
+    padding: 14px; /* AÃ±ade espacio interior alrededor del encabezado. */
 }
-
 header h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 0; /* Elimina el margen predeterminado del tÃ­tulo. */
+    font-size: 24px; /* Define el tamaÃ±o del tÃ­tulo principal. */
 }
-
 nav {
-    background-color: #00559b;
-    text-align: center;
-    padding: 8px;
+    background-color: #00559b; /* Pinta la barra de navegaciÃ³n de azul oscuro. */
+    text-align: center; /* Centra los enlaces de navegaciÃ³n. */
+    padding: 8px; /* AÃ±ade espacio interior a la barra. */
 }
-
 nav a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 0 8px;
+    color: white; /* Muestra los enlaces en blanco. */
+    font-size: 14px; /* Define el tamaÃ±o del texto de los enlaces. */
+    text-decoration: none; /* Quita el subrayado inicial de los enlaces. */
+    margin: 0 8px; /* Separa horizontalmente los enlaces. */
 }
-
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* AÃ±ade el subrayado al pasar el cursor. */
 }
-
 section {
-    padding: 50px 20px;
+    padding: 50px 20px; /* Aplica 50 px arriba/abajo y 20 px a los lados. */
 }
-
 body.portada section,
 body.horario-clase section,
 body.horario-restaurante main > section {
-    text-align: center;
+    text-align: center; /* Alinea al centro el texto de estas secciones. */
 }
-
 section h2 {
-    font-size: 30px;
+    font-size: 30px; /* Aumenta el tamaÃ±o del tÃ­tulo de secciÃ³n. */
 }
-
 aside {
-    position: absolute;
-    bottom: 40px;
-    left: 10px;
+    position: absolute; /* Permite posicionar el bloque fuera del flujo normal. */
+    bottom: 40px; /* SitÃºa el bloque a 40 px del borde inferior. */
+    left: 10px; /* SitÃºa el bloque a 10 px del borde izquierdo. */
 }
-
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    padding: 10px 0;
+    position: absolute; /* Permite posicionar el pie fuera del flujo normal. */
+    bottom: 0; /* Lo pega al borde inferior. */
+    left: 10px; /* Lo separa 10 px del borde izquierdo. */
+    padding: 10px 0; /* AÃ±ade espacio vertical al pie. */
 }
 .sor,
 body.horario-restaurante tbody td:nth-of-type(1) {
-    background-color: #b7d7c2;
+    background-color: #b7d7c2; /* Aplica verde claro a la materia o al turno de maÃ±ana. */
 }
-
 .aw,
 body.horario-restaurante tbody td:nth-of-type(2) {
-    background-color: #f2c6a0;
+    background-color: #f2c6a0; /* Aplica naranja claro a la materia o al turno de tarde. */
 }
-
 .sr,
 body.horario-restaurante tbody th {
-    background-color: #c5c9e6;
+    background-color: #c5c9e6; /* Aplica lila claro a la materia o a los dÃ­as. */
 }
-
-.ingles { background-color: #f2df9b; }
-
+.ingles { background-color: #f2df9b; } /* Color de InglÃ©s. */
 .si,
 body.horario-restaurante thead {
-    background-color: #b7dce0;
+    background-color: #b7dce0; /* Aplica azul verdoso claro. */
 }
-
 .pi,
 body.horario-restaurante tfoot {
-    background-color: #d8c2df;
+    background-color: #d8c2df; /* Aplica lila claro. */
 }
-
-.ipe { background-color: #f0c4c4; }
-.opt { background-color: #c6d9a8; }
-
+.ipe { background-color: #f0c4c4; } /* Color de I.P.E. */
+.opt { background-color: #c6d9a8; } /* Color de la optativa. */
 .recreo,
 body.horario-restaurante tbody td:nth-of-type(3) {
-    background-color: #e8b8a8;
+    background-color: #e8b8a8; /* Aplica salmÃ³n claro. */
 }
-
 table {
-    margin: 0 auto;
-    border-collapse: collapse;
+    margin: 0 auto; /* Centra la tabla horizontalmente y quita margen vertical. */
+    border-collapse: collapse; /* Une los bordes contiguos de la tabla. */
 }
-
 th,
 td {
-    padding: 6px;
-    border: 1px solid #222;
+    padding: 6px; /* Separa el contenido del borde de cada celda. */
+    border: 1px solid #222; /* Dibuja un borde oscuro de 1 px. */
 }
-
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Limita el ancho de la imagen al de su contenedor. */
+    height: auto; /* Conserva la proporciÃ³n original de la imagen. */
 }
-
 .portada-imagen {
-    display: block;
-    width: 100%;
-    max-width: 480px;
-    margin: 24px auto 0;
-    border-radius: 8px;
+    display: block; /* Hace que la imagen se comporte como un bloque. */
+    width: 100%; /* Permite que la imagen use el ancho disponible. */
+    max-width: 480px; /* Limita el tamaÃ±o mÃ¡ximo de la imagen. */
+    margin: 24px auto 0; /* La centra y aÃ±ade espacio por encima. */
+    border-radius: 8px; /* Redondea ligeramente las esquinas de la imagen. */
 }
-
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 28px 20px;
+    max-width: 1000px; /* Evita que el contenido se extienda demasiado en pantallas anchas. */
+    margin: 0 auto; /* Centra el Ã¡rea principal horizontalmente. */
+    padding: 28px 20px; /* AÃ±ade espacio alrededor del contenido principal. */
 }
-
 form,
 main > ul {
-    background-color: #dcefff;
-    border: 1px solid #91c7ed;
-    border-radius: 8px;
+    background-color: #dcefff; /* Pinta el fondo de azul claro. */
+    border: 1px solid #91c7ed; /* Dibuja un borde azul claro. */
+    border-radius: 8px; /* Redondea las esquinas del bloque. */
 }
-
 form {
-    box-sizing: border-box;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px;
+    box-sizing: border-box; /* Incluye borde y relleno dentro del ancho calculado. */
+    max-width: 900px; /* Limita el ancho mÃ¡ximo del formulario. */
+    margin: 0 auto; /* Centra el formulario horizontalmente. */
+    padding: 24px; /* AÃ±ade espacio entre el formulario y su contenido. */
 }
-
 form fieldset {
-    margin: 0 0 20px;
-    padding: 16px;
-    border: 1px solid #91c7ed;
-    border-radius: 6px;
+    margin: 0 0 20px; /* AÃ±ade espacio debajo de cada grupo. */
+    padding: 16px; /* AÃ±ade espacio interior al grupo. */
+    border: 1px solid #91c7ed; /* Dibuja un borde azul claro alrededor del grupo. */
+    border-radius: 6px; /* Redondea las esquinas del grupo. */
 }
-
 form legend {
-    padding: 0 8px;
-    font-weight: bold;
+    padding: 0 8px; /* Separa el tÃ­tulo del borde del grupo. */
+    font-weight: bold; /* Muestra el tÃ­tulo en negrita. */
 }
-
 form p {
-    margin: 12px 0;
+    margin: 12px 0; /* AÃ±ade margen vertical y elimina el horizontal. */
 }
-
 form input:not([type="radio"]):not([type="checkbox"]),
 form select,
 form textarea {
-    max-width: 100%;
-    padding: 8px;
-    border: 1px solid #8a9eae;
-    border-radius: 4px;
-    font: inherit;
+    max-width: 100%; /* Evita que el campo supere el ancho disponible. */
+    padding: 8px; /* AÃ±ade espacio alrededor del texto del campo. */
+    border: 1px solid #8a9eae; /* Dibuja un borde gris azulado. */
+    border-radius: 4px; /* Redondea ligeramente las esquinas del campo. */
+    font: inherit; /* Usa la misma fuente que el resto del formulario. */
 }
-
 form input:focus,
 form select:focus,
 form textarea:focus {
-    outline: 2px solid #0876d1;
-    outline-offset: 1px;
+    outline: 2px solid #0876d1; /* Dibuja un contorno azul al enfocar el campo. */
+    outline-offset: 1px; /* Separa el contorno del borde del campo. */
 }
-
 form button {
-    margin: 4px 8px 4px 0;
-    padding: 9px 16px;
-    border: 0;
-    border-radius: 4px;
-    background-color: #0876d1;
-    color: white;
-    font: inherit;
-    cursor: pointer;
+    margin: 4px 8px 4px 0; /* Separa los botones entre sÃ­. */
+    padding: 9px 16px; /* AÃ±ade espacio interior al botÃ³n. */
+    border: 0; /* Quita el borde predeterminado del botÃ³n. */
+    border-radius: 4px; /* Redondea las esquinas del botÃ³n. */
+    background-color: #0876d1; /* Pinta el botÃ³n de azul. */
+    color: white; /* Muestra el texto del botÃ³n en blanco. */
+    font: inherit; /* Usa la fuente del formulario. */
+    cursor: pointer; /* Muestra el cursor de selecciÃ³n al pasar por encima. */
 }
-
 form button:hover {
-    background-color: #00559b;
+    background-color: #00559b; /* Cambia el fondo a azul oscuro. */
 }
-
 form + p,
 main > p {
-    text-align: center;
+    text-align: center; /* Alinea el texto y los botones al centro. */
 }
-
 main > ul {
-    padding: 20px 40px;
+    padding: 20px 40px; /* Separa los elementos del borde de la lista. */
 }
-
 body:has(form) footer,
 body.horario-restaurante footer {
-    position: static;
-    padding: 10px 20px;
-    text-align: center;
+    position: static; /* Evita que el pie se superponga al contenido. */
+    padding: 10px 20px; /* AÃ±ade espacio alrededor del pie. */
+    text-align: center; /* Centra el contenido del pie. */
 }
-
 @media (max-width: 600px) {
     header h1 {
-        font-size: 21px;
+        font-size: 21px; /* Reduce el tÃ­tulo para que quepa en mÃ³viles. */
     }
-
     form {
-        padding: 16px;
+        padding: 16px; /* Reduce el espacio interior del formulario. */
     }
-
     form fieldset {
-        padding: 12px;
+        padding: 12px; /* Reduce el espacio interior de los grupos de campos. */
     }
 }
-
 body.horario-restaurante aside {
-    position: static;
-    margin: 24px auto;
-    text-align: center;
+    position: static; /* Evita que la publicidad se superponga a la tabla. */
+    margin: 24px auto; /* La centra y aÃ±ade espacio vertical. */
+    text-align: center; /* Centra el contenido de la publicidad. */
 }
